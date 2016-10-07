@@ -1,7 +1,7 @@
 {
   "name": "angular-strap",
   "description": "AngularStrap - AngularJS directives for Bootstrap",
-  "version": "2.1.4",
+  "version": "0.0.0",
   "keywords": [
     "angular",
     "bootstrap"
@@ -29,9 +29,12 @@
       "url": "https://github.com/mgcrea/angular-strap/blob/master/LICENSE.md"
     }
   ],
-  "dependencies": {},
+  "dependencies": {
+    "generate-changelog": "^1.0.2"
+  },
   "devDependencies": {
     "chalk": "^0.5.1",
+    "corp-semantic-release": "^2.0.0",
     "gulp": "^3.8.10",
     "gulp-autoprefixer": "2.0.0",
     "gulp-changed": "^1.0.0",
@@ -61,12 +64,14 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-sauce-launcher": "^0.2.10",
     "merge-stream": "^0.1.6",
-    "run-sequence": "^1.0.2"
+    "run-sequence": "^1.0.2",
+    "semantic-release": "^4.3.5",
+    "standard-version": "^3.0.0"
   },
   "engines": {
     "node": "^0.10"
   },
   "scripts": {
-    "test": "gulp jshint karma:unit"
+    "release": "standard-version"
   }
 }
