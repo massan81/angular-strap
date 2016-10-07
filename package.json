@@ -73,5 +73,5 @@
   "scripts": {
     "release": "standard-version"
   },
-  "version": null
+  "version": "1.0.1"
 }
